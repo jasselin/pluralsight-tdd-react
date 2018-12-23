@@ -10,11 +10,16 @@ describe("Map", function() {
     });
 
     it("renders without crashing", () => {
-        let mountedMap = shallow(<Map />);
+        shallow(<Map />);
     });
 
     it("contains an image", () => {
         let image = mountedMap.find("img");
         expect(image.length).toBe(1);
+    });
+
+    it("displays the none map when no params are given", () => {
+        const defaultMap = mountedMap.find('img[src="images/none.png"]');
+        expect(defaultMap.length).toBe(1);
     });
 });
