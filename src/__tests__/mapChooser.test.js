@@ -1,4 +1,4 @@
-import mapChooser from '../mapChooser';
+import mapChooser from "../mapChooser";
 
 describe("mapChooser", function() {
     it("returns an image based on input given to it", function() {
