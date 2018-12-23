@@ -1,7 +1,6 @@
 function mapChooser(locationName) {
-    if (!locationName)
-        locationName = "default";
-    let imageName = locationName + ".jpg";
+    if (!locationName) locationName = "none";
+    let imageName = locationName + ".png";
     return imageName;
 }
 
